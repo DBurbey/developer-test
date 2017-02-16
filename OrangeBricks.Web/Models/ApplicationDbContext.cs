@@ -12,12 +12,14 @@ namespace OrangeBricks.Web.Models
         }
 
         public static ApplicationDbContext Create()
+
         {
             return new ApplicationDbContext();
         }
 
         public IDbSet<Property> Properties { get; set; }
         public IDbSet<Offer> Offers { get; set; }
+        public IDbSet<ViewingRequest> ViewingRequests { get; set; }
 
         public new void SaveChanges()
         {
