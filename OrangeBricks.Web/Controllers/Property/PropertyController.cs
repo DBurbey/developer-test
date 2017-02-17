@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
 using Microsoft.AspNet.Identity;
 using OrangeBricks.Web.Attributes;
@@ -106,11 +105,15 @@ namespace OrangeBricks.Web.Controllers.Property
         [OrangeBricksAuthorize(Roles = "Buyer")]
         public ActionResult ViewRequest(RequestViewCommand command)
         {
-            var handler = new RequestViewCommandHandler(_context);
+            using (var context = new ApplicationDbContext())
+            {
+                var handler = new RequestViewCommandHandler(context);
 
-            command.UserId = User.Identity.GetUserId();
+                command.UserId = User.Identity.GetUserId();
 
-            handler.Handle(command);
+                handler.Handle(command);
+
+            }
 
             return RedirectToAction("Index");
         }

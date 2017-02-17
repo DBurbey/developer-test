@@ -1,5 +1,3 @@
-using System;
-
 namespace OrangeBricks.Web.Controllers.Property.ViewModels
 {
     public class RequestViewViewModel

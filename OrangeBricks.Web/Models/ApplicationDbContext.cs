@@ -1,5 +1,4 @@
 using System.Data.Entity;
-using System.Data.Entity.Infrastructure;
 using Microsoft.AspNet.Identity.EntityFramework;
 
 namespace OrangeBricks.Web.Models

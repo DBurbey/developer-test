@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using OrangeBricks.Web.Models;
 
 namespace OrangeBricks.Web.Controllers.Property.Commands
 {

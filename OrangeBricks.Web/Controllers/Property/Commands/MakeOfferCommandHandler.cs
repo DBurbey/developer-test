@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using OrangeBricks.Web.Models;
-using Microsoft.AspNet.Identity;
 
 namespace OrangeBricks.Web.Controllers.Property.Commands
 {

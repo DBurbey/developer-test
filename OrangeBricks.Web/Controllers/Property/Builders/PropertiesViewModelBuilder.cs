@@ -1,5 +1,3 @@
-using System;
-using System.Data.Entity.Core.Common.CommandTrees;
 using System.Linq;
 using OrangeBricks.Web.Controllers.Property.ViewModels;
 using OrangeBricks.Web.Models;
